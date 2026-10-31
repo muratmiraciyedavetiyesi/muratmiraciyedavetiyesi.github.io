@@ -28,6 +28,7 @@
   let resumeMusic = false;
 
   const publicUrl = config.publicUrl.replace(/\/$/, '');
+  const shareUrl = config.shareUrl || `${publicUrl}/`;
   const targetTime = new Date(`${config.date}T${config.startTime}:00${config.utcOffset}`).getTime();
   const endTime = new Date(`${config.date}T${config.endTime}:00${config.utcOffset}`).getTime();
   const pad = (value) => String(value).padStart(2, '0');
@@ -220,7 +221,7 @@
 
   function configureLinks() {
     const names = `${config.bride} & ${config.groom}`;
-    const text = `${names}\nDüğünümüze davetlisiniz.\n22 Kasım 2026, Pazar\n${config.startTime}–${config.endTime} · Nikâh ${config.ceremonyTime}\n\n${publicUrl}/`;
+    const text = `${names}\nDüğünümüze davetlisiniz.\n22 Kasım 2026, Pazar\n${config.startTime}–${config.endTime} · Nikâh ${config.ceremonyTime}\n\n${shareUrl}`;
     $('#whatsapp-link').href = `https://wa.me/?text=${encodeURIComponent(text)}`;
     const stamp = (value) => new Date(value).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
     const params = new URLSearchParams({
@@ -258,7 +259,7 @@
   }
 
   async function copyLink() {
-    const text = `${publicUrl}/`;
+    const text = shareUrl;
     try {
       if (!navigator.clipboard || !window.isSecureContext) throw new Error('clipboard unavailable');
       await navigator.clipboard.writeText(text);
