@@ -10,7 +10,7 @@ window.INVITATION = {
   "timeZone": "Europe/Istanbul",
   "utcOffset": "+03:00",
   "publicUrl": "https://muratmiraciyedavetiyesi.github.io",
-  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=2",
+  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=3",
   "venue": {
     "name": "Asrena Taşev",
     "address": "Selçuk Bey, 745. Sk. No:1, 20100 Denizli",
