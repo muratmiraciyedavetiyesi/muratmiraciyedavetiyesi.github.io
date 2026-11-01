@@ -10,7 +10,7 @@ window.INVITATION = {
   "timeZone": "Europe/Istanbul",
   "utcOffset": "+03:00",
   "publicUrl": "https://muratmiraciyedavetiyesi.github.io",
-  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=3",
+  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=4",
   "venue": {
     "name": "Asrena Taşev",
     "address": "Selçuk Bey, 745. Sk. No:1, 20100 Denizli",
@@ -20,8 +20,8 @@ window.INVITATION = {
     "whatsapp": ""
   },
   "music": {
-    "src": "./kutlama-fon-20261101.m4a",
-    "title": "Kutlama",
+    "src": "./kutlama-sozsuz-kesit.m4a",
+    "title": "Kutlama · Vokal ayrıştırılmış fon",
     "enabled": true
   }
 };
