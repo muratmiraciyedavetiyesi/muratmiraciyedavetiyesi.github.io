@@ -10,7 +10,7 @@ window.INVITATION = {
   "timeZone": "Europe/Istanbul",
   "utcOffset": "+03:00",
   "publicUrl": "https://muratmiraciyedavetiyesi.github.io",
-  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=5",
+  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/?v=6",
   "venue": {
     "name": "Asrena Taşev",
     "address": "Selçuk Bey, 745. Sk. No:1, 20100 Denizli",
@@ -20,8 +20,8 @@ window.INVITATION = {
     "whatsapp": ""
   },
   "music": {
-    "src": "./kutlama-orijinal-giris-40sn.m4a",
-    "title": "Kutlama · Orijinal giriş, ilk 40 saniye",
+    "src": "./kutlama-orijinal-giris-25sn.m4a",
+    "title": "Kutlama · Orijinal giriş, ilk 25 saniye",
     "enabled": true
   }
 };
