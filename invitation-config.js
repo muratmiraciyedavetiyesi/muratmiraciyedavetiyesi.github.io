@@ -20,8 +20,8 @@ window.INVITATION = {
     "whatsapp": ""
   },
   "music": {
-    "src": "./birlikte.m4a",
-    "title": "Birlikte",
+    "src": "./kutlama-fon-20261101.m4a",
+    "title": "Kutlama",
     "enabled": true
   }
 };
