@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Derya Ibrahim Invitation//TR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:derya-ibrahim-20261129@davetiye
+DTSTAMP:20261119T160000Z
+DTSTART:20261129T150000Z
+DTEND:20261129T190000Z
+SUMMARY:Derya ve İbrahim Düğünü
+DESCRIPTION:Mutluluk gele dursun\, dostlara haber olsun. Nikah 19:00.
+LOCATION:Asrena Taşev\, Selçuk Bey\, 745. Sk. No:1\, 20100 Denizli
+URL:https://deryaibrahimdavetiye.vercel.app/
+END:VEVENT
+END:VCALENDAR
