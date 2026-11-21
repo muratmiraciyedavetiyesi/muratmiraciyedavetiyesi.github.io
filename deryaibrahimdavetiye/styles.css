@@ -19,3 +19,8 @@ main{width:min(100%,var(--stage-width));margin:0 auto;outline:none}.scene{positi
 .butterflies.is-paused,.butterflies.is-paused *{animation-play-state:paused!important}
 @media(max-height:620px) and (orientation:portrait){.count-days>span:first-child{font-size:78px}.count-clock{margin:15px 0}.count-message{font-size:19px}.scene--closing .closing-names{font-size:43px}.scene--closing .ornament{margin:9px auto}.scene--closing .invitation-verse{margin:12px 0}.scene--closing .closing-date{margin:13px 0}.scene--closing .replay{margin-top:2px}.timeline li{padding-bottom:15px}}
 @media(max-height:620px) and (orientation:portrait){#program.scene,.scene--closing{padding-top:10svh;padding-bottom:10svh}.timeline li{padding-bottom:10px}.timeline h3{font-size:24px}.timeline p{font-size:15px}}
+
+/* İçerik her zaman erişilebilir: JS veya uygulama dosyası yüklenmezse açılış perdesi gizlenir. */
+.js body:not(.is-init) .gate{display:none!important}
+.js body:not(.is-init) .reveal{opacity:1!important;transform:none!important;visibility:visible!important}
+.js body:not(.is-init) .bottom-tools{display:none!important}

@@ -156,7 +156,7 @@
     opening = false;
     if (calendar.open) calendar.close();
     setLocked(true);
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
     document.body.classList.remove('is-open');
     $('#bottom-tools').hidden = true;
     scenes.forEach((scene) => scene.classList.remove('is-visible'));
@@ -366,8 +366,9 @@
   };
   if (motion.addEventListener) motion.addEventListener('change', onMotionChange);
   if (!config.music.enabled) musicToggle.hidden = true;
+  document.body.classList.add('is-init');
   setLocked(true);
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  try { window.scrollTo({ top: 0, behavior: 'auto' }); } catch (_) { window.scrollTo(0, 0); }
   setupScenes();
   configureLinks();
   startClock();

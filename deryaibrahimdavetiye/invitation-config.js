@@ -9,8 +9,8 @@ window.INVITATION = {
   "ceremonyTime": "19:00",
   "timeZone": "Europe/Istanbul",
   "utcOffset": "+03:00",
-  "publicUrl": "https://deryaibrahimdavetiye.vercel.app",
-  "shareUrl": "https://deryaibrahimdavetiye.vercel.app/?v=2",
+  "publicUrl": "https://muratmiraciyedavetiyesi.github.io/deryaibrahimdavetiye/",
+  "shareUrl": "https://muratmiraciyedavetiyesi.github.io/deryaibrahimdavetiye/?v=3",
   "venue": {
     "name": "Asrena Taşev",
     "address": "Selçuk Bey, 745. Sk. No:1, 20100 Denizli",
