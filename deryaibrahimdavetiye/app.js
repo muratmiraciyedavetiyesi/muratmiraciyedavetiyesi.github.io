@@ -221,19 +221,7 @@
 
   function configureLinks() {
     const names = `${config.bride} & ${config.groom}`;
-    const text = [
-      "🌸 Mutluluk gele dursun, dostlara haber olsun.",
-      "Düğünümüz var bugün, bizi sevenler buyursun.",
-      "",
-      "💍 İbrahim Mihmak & Derya Verme",
-      "📆 29 Kasım 2026 Pazar",
-      `🎉 Eğlence: ${config.startTime}–${config.endTime}`,
-      `💐 Nikâh: ${config.ceremonyTime}`,
-      `📍 ${config.venue.name} — ${config.venue.address}`,
-      "",
-      `💌 Davetiyemiz: ${shareUrl}`
-    ].join("\n");
-    $('#whatsapp-link').href = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    // Keep the URL first and by itself so WhatsApp can reliably generate the image preview.\n    const text = shareUrl;\n    $('#whatsapp-link').href = `https://wa.me/?text=${encodeURIComponent(text)}`;
     const stamp = (value) => new Date(value).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
     const params = new URLSearchParams({
       action: 'TEMPLATE', text: `${names} · Düğün`,
