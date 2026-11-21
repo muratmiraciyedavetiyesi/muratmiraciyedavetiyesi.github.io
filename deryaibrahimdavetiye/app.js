@@ -303,6 +303,10 @@
 
   $('#open-invitation').addEventListener('click', () => openInvitation());
   $('#open-caption').addEventListener('click', () => openInvitation());
+  gate.addEventListener('click', (event) => {
+    if (event.target.closest && event.target.closest('button,a')) return;
+    openInvitation();
+  });
   $('#skip-intro').addEventListener('click', () => openInvitation(true));
   $('#replay').addEventListener('click', replay);
   $('#next-scene').addEventListener('click', () => {

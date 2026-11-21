@@ -24,3 +24,8 @@ main{width:min(100%,var(--stage-width));margin:0 auto;outline:none}.scene{positi
 .js body:not(.is-init) .gate{display:none!important}
 .js body:not(.is-init) .reveal{opacity:1!important;transform:none!important;visibility:visible!important}
 .js body:not(.is-init) .bottom-tools{display:none!important}
+
+/* Bütün telefonlar için animasyonsuz, JavaScript gerektirmeyen erişim seçeneği */
+.gate-simple-link{position:absolute;z-index:12;bottom:max(22px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:block;max-width:94%;width:max-content;padding:10px 15px;border-radius:28px;text-align:center;background:#fff9eae6;color:#644c31;font-family:Arial,sans-serif;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:2px;box-shadow:0 2px 8px #3d2a1a29;white-space:normal}
+.is-opening .gate-simple-link{opacity:0;pointer-events:none}
+@media(max-height:540px){.gate-simple-link{bottom:5px;padding:6px 9px;font-size:10px}}
